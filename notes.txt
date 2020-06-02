@@ -13,6 +13,14 @@ REST - Envia os dados pro usuário via JSON (JavaScript Object Notation).
 
 Conceitos de TypeScript
 JS com tipagem, facilita as alterações por informar os formatos que são enviados nos parâmetros e retornos
+Bibliotecas para utilização do TS
+- npm install express // gerenciador de rotas
+- npm install typescript -D
+- npm install @types/express -D
+- npm install ts-node -D
+- npm install ts-node-dev -D
+- npx tsc --init
+- npx ts-node-dev [path] // adicionar como script no package
 
 Biblioteca React - Construção de interfaces e do SPA
 Vantagens

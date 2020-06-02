@@ -27,3 +27,4 @@ Vantagens
 - Componentização
 - Divisão de responsabilidade
 - Uma API, múltiplos clientes
+- npx create-react-app [directory] --template=typescript

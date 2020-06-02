@@ -1,0 +1,21 @@
+API RESTful
+Responsabilidades do backend (Node.js)
+- Regras de negócio = núcleo da aplicação
+- Conexão com banco de dados
+- Envio de email ou conexão com serviços externos
+- Autenticação e autorização
+- Criptografia e segurança
+
+Estrutura MVC x REST.
+MVC - Envia o conteúdo completo da página com HTML incluso.
+REST - Envia os dados pro usuário via JSON (JavaScript Object Notation).
+- O front-end da estrutura REST é o responsável pela contrução de interfaces e como os dados serão utilizados.
+
+Conceitos de TypeScript
+JS com tipagem, facilita as alterações por informar os formatos que são enviados nos parâmetros e retornos
+
+Biblioteca React - Construção de interfaces e do SPA
+Vantagens
+- Componentização
+- Divisão de responsabilidade
+- Uma API, múltiplos clientes

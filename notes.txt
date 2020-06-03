@@ -28,3 +28,7 @@ Vantagens
 - Divisão de responsabilidade
 - Uma API, múltiplos clientes
 - npx create-react-app [directory] --template=typescript
+
+Comandos para utilização do banco de dados
+- npm install knex
+- npm install mysql

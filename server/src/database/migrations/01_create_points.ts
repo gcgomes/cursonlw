@@ -11,8 +11,6 @@ export async function up(knex: Knex) {
         table.decimal('longitude', 9, 7).notNullable();
         table.string('city', 100).notNullable();
         table.integer('state_id').unsigned().notNullable().references('id').inTable('state');
-        table.dateTime('created_at').notNullable();
-        table.dateTime('updated_at').notNullable();
     })
 }
 

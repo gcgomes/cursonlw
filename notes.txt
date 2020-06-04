@@ -20,7 +20,7 @@ Bibliotecas para utilização do TS
 - npm install ts-node -D
 - npm install ts-node-dev -D
 - npx tsc --init
-- npx ts-node-dev [path] // adicionar como script no package
+- npx ts-node-dev --tranpileOnly --ignore-watch node_modules [path] // adicionar como script no package (dev)
 
 Biblioteca React - Construção de interfaces e do SPA
 Vantagens
@@ -32,3 +32,6 @@ Vantagens
 Comandos para utilização do banco de dados
 - npm install knex
 - npm install mysql
+- Criar arquivo knexfile.ts (Olhar documentação)
+- npx knex --knexfile knexfile.ts migrate:latest // adicionar como script no package (knex:migrate)
+- npx knex --knexfile knexfile.ts seed:run // adicionar como script no package (knex:seed)

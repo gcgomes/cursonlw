@@ -53,7 +53,7 @@ class PointController {
             name,
             email,
             whatsapp,
-            image: 'fake-image',
+            image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=60',
             latitude,
             longitude,
             city,

@@ -14,8 +14,8 @@ REST - Envia os dados pro usuário via JSON (JavaScript Object Notation).
 Conceitos de TypeScript
 JS com tipagem, facilita as alterações por informar os formatos que são enviados nos parâmetros e retornos
 Bibliotecas para utilização do TS
-- npm install express // gerenciador de rotas
 - npm install typescript -D
+- npm install express // gerenciador de rotas
 - npm install @types/express -D
 - npm install ts-node -D
 - npm install ts-node-dev -D
@@ -35,3 +35,7 @@ Comandos para utilização do banco de dados
 - Criar arquivo knexfile.ts (Olhar documentação)
 - npx knex --knexfile knexfile.ts migrate:latest // adicionar como script no package (knex:migrate)
 - npx knex --knexfile knexfile.ts seed:run // adicionar como script no package (knex:seed)
+
+Adicionando CORS (Cross Origin Resource Sharing)
+- npm install cors
+- npm install @types/cors

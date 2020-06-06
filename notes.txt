@@ -20,7 +20,7 @@ Bibliotecas para utilização do TS
 - npm install ts-node -D
 - npm install ts-node-dev -D
 - npx tsc --init
-- npx ts-node-dev --tranpileOnly --ignore-watch node_modules [path] // adicionar como script no package (dev)
+- npx ts-node-dev --ignore-watch node_modules [path] // adicionar como script no package (dev)
 
 Biblioteca React - Construção de interfaces e do SPA
 Vantagens
@@ -38,4 +38,11 @@ Comandos para utilização do banco de dados
 
 Adicionando CORS (Cross Origin Resource Sharing)
 - npm install cors
-- npm install @types/cors
+- npm install @types/cors -D
+
+Biblioteca gratuita de mapas Leaflet
+- npm install leaflet react-leaflet
+- npm install @types/react-leaflet -D
+
+Biblioteca de requisições
+- npm install axios

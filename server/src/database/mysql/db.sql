@@ -11,17 +11,6 @@ CREATE SCHEMA IF NOT EXISTS `ecoleta` DEFAULT CHARACTER SET utf8 ;
 USE `ecoleta` ;
 
 -- -----------------------------------------------------
--- Table `ecoleta`.`state`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ecoleta`.`state` (
-  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(50) NOT NULL,
-  `abbreviation` VARCHAR(2) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `ecoleta`.`points`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ecoleta`.`points` (
@@ -33,16 +22,7 @@ CREATE TABLE IF NOT EXISTS `ecoleta`.`points` (
   `latitude` DECIMAL(9,7) NOT NULL,
   `longitude` DECIMAL(9,7) NOT NULL,
   `city` VARCHAR(100) NOT NULL,
-  `state_id` INT UNSIGNED NOT NULL,
-  `created_at` DATETIME NOT NULL,
-  `updated_at` DATETIME NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `fk_points_state1_idx` (`state_id` ASC) VISIBLE,
-  CONSTRAINT `fk_points_state1`
-    FOREIGN KEY (`state_id`)
-    REFERENCES `ecoleta`.`state` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  `uf` VARCHAR(2) NOT NULL
 ENGINE = InnoDB;
 
 

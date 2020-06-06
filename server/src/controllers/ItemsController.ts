@@ -15,8 +15,6 @@ class ItemsController {
 
         return res.json(serializedItems);
     };
-
-
 }
 
 export default ItemsController;

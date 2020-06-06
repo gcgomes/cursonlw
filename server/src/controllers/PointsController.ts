@@ -3,7 +3,7 @@ import knex from "../database/connection";
 
 class PointController {
     async index(req: Request, res: Response) {
-        const {city, state_id, items} = req.query;
+        const {city, uf, items} = req.query;
 
         const parsedItems = String(items).split(',').map(item => Number(item.trim()));
 
@@ -11,7 +11,7 @@ class PointController {
             .join('points_has_items', 'points.id', '=', 'points_has_items.points_id')
             .whereIn('points_has_items.items_id', parsedItems)
             .where('city', String(city))
-            .where('state_id', Number(state_id))
+            .where('uf', String(uf))
             .distinct()
             .select('points.*');
 
@@ -21,7 +21,7 @@ class PointController {
     async show(req: Request, res: Response) {
         const { id } = req.params;
 
-        const point = await knex('points').innerJoin('state', 'points.state_id', '=', 'state.id').where('points.id', id).select('points.*', 'state.abbreviation as uf').first();
+        const point = await knex('points').where('points.id', id).select('*').first();
 
         if(!point) {
             return res.status(400).json({ message: 'Point not found.' });
@@ -43,7 +43,7 @@ class PointController {
             latitude,
             longitude,
             city,
-            state_id,
+            uf,
             items
         } = req.body;
 
@@ -57,7 +57,7 @@ class PointController {
             latitude,
             longitude,
             city,
-            state_id,
+            uf,
         };
 
         const insertedIds = await trx('points').insert(point);

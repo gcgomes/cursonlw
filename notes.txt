@@ -49,3 +49,11 @@ Biblioteca de requisições
 
 Instalação do expo
 - npm install -g expo-cli
+- expo init [directory] --npm
+
+Expo fonts
+- expo install expo-font @expo-google-fonts/[font-name]
+
+Navegação mobile
+- npm install @react-navigation/native (Olhar documentação)
+- npm install @react-navigation/stack

@@ -46,3 +46,6 @@ Biblioteca gratuita de mapas Leaflet
 
 Biblioteca de requisições
 - npm install axios
+
+Instalação do expo
+- npm install -g expo-cli

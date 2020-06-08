@@ -57,3 +57,14 @@ Expo fonts
 Navegação mobile
 - npm install @react-navigation/native (Olhar documentação)
 - npm install @react-navigation/stack
+
+Uploads de Imagens (Server)
+- npm install multer
+- npm install @types/multer -D
+
+Uploads de Imagens (Web)
+- npm install react-dropzone
+
+Validação Backend
+- npm install celebrate
+- npm install @types/hapi__joi -D
